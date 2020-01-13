@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/l" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAMA PERUSAHAAN"/>
+
+            <EditText
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:hint="Nama"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="65dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"/>
+            <EditText
+                android:layout_marginTop="85dp"
+                android:layout_width="match_parent"
+                android:hint="Alamat"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gaji"/>
+
+            <EditText
+                android:layout_marginTop="150dp"
+                android:layout_width="match_parent"
+                android:hint="Gaji"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isi Deskripsi Pekerjaan"/>
+            <EditText
+                android:layout_marginTop="220dp"
+                android:layout_width="match_parent"
+                android:hint="Tipe Pekerjaan"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="265dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lowongan"/>
+            <EditText
+                android:layout_marginTop="285dp"
+                android:layout_width="match_parent"
+                android:hint="Lowongan"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="335dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tingkat Pendidikan"/>
+            <EditText
+                android:layout_marginTop="350dp"
+                android:layout_width="match_parent"
+                android:hint="Isi Tingkat Pendidikan"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="400dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berakhir Dalam"/>
+            <EditText
+                android:layout_marginTop="420dp"
+                android:layout_width="match_parent"
+                android:hint="Isi Deadline"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="470dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Industri"/>
+            <EditText
+                android:layout_marginTop="500dp"
+                android:layout_width="match_parent"
+                android:hint="Isi Tipe Industri"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="15dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Simpan"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086551276084",
+    "firebase_url": "https://likelok-5f22f.firebaseio.com",
+    "project_id": "likelok-5f22f",
+    "storage_bucket": "likelok-5f22f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086551276084:android:d7d1f89da680d86adee861",
+        "android_client_info": {
+          "package_name": "com.example.likelok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086551276084-qhgjh0gd12hf5p9ojihti98rre9snjh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.likelok",
+            "certificate_hash": "e01fbb79b90b0b5fe140021b530826483f74d5e5"
+          }
+        },
+        {
+          "client_id": "1086551276084-qis631trvapo71s7rg44n5skpci43un2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg0_h90AYDrv8aZP2hbFHpB_ugXcvCxFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086551276084-qis631trvapo71s7rg44n5skpci43un2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
