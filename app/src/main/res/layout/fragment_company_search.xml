@@ -3,23 +3,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".company.CompanySearchFragment">
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/jdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp" />
+
     <LinearLayout
+        android:id="@+id/cari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/jdl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari pekerjaan sekarang juga"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_margin="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="46dp"
+                android:background="@drawable/form_border"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="13sp"
+                android:hint="Cari pekerjaan idamanmu" />
+
+            <ImageButton
+                android:id="@+id/bt_search"
+                android:layout_width="50dp"
+                android:layout_height="46dp"
+                android:src="@drawable/search"
+                android:background="@drawable/form_border"
+                android:backgroundTint="@color/colorAccent"
+                android:tint="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="245dp"
+        android:layout_height="233dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_undraw_search" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cari"
+        android:text="Menampilkan 0 data"
+        android:textColor="@android:color/black"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_loker"
+        android:layout_below="@id/tv_total"
+        android:layout_marginHorizontal="8dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerInParent="true">
 
         <ImageView
-            android:layout_width="295dp"
-            android:layout_height="273dp"
-            android:src="@drawable/ic_undraw_under_construction_46pa"/>
+            android:layout_width="245dp"
+            android:layout_height="233dp"
+            android:src="@drawable/ic_undraw_empty" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This page is under construction"
+            android:text="Tidak ada data yang cocok"
+            android:textColor="@android:color/black"
             android:layout_gravity="center" />
 
     </LinearLayout>

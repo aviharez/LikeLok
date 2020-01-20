@@ -67,6 +67,7 @@
                     android:layout_height="48dp"
                     android:src="@drawable/ic_camera_alt_black_24dp"
                     android:background="@drawable/circle_button"
+                    android:backgroundTint="@color/colorAccent"
                     android:tint="@android:color/white"
                     android:padding="8dp"
                     android:layout_alignParentBottom="true"
@@ -84,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/et_name"
                 android:inputType="text"
-                android:background="@drawable/form_border"
+                android:background="@drawable/loker_bg"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="8dp"
                 android:layout_marginTop="4dp"
@@ -99,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/et_alamat"
-                android:background="@drawable/form_border"
+                android:background="@drawable/loker_bg"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="8dp"
                 android:layout_marginTop="4dp"
@@ -123,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Laki-laki"
-                    android:buttonTint="@color/purple"/>
+                    android:buttonTint="@color/colorPrimary"/>
 
                 <RadioButton
                     android:id="@+id/rb_pr"
@@ -131,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Perempuan"
-                    android:buttonTint="@color/purple"/>
+                    android:buttonTint="@color/colorPrimary"/>
 
             </RadioGroup>
 
@@ -145,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/et_email"
                 android:enabled="false"
-                android:background="@drawable/form_border"
+                android:background="@drawable/loker_bg"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="8dp"
                 android:layout_marginTop="4dp"
@@ -161,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/et_hp"
                 android:inputType="number"
-                android:background="@drawable/form_border"
+                android:background="@drawable/loker_bg"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="8dp"
                 android:layout_marginTop="4dp"
@@ -172,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Simpan"
-                android:background="@color/purple"
+                android:background="@color/colorAccent"
                 android:textColor="@android:color/white"
                 android:layout_marginTop="16dp" />
 

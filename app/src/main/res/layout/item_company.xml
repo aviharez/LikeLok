@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/loker_bg"
+    android:padding="16dp"
+    android:layout_width="200dp"
+    android:layout_height="230dp"
+    android:layout_marginLeft="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Perusahaan"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_company_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alamat perusahaan"
+            android:textColor="#6d7e78"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/tv_alamat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email perusahaan"
+            android:textColor="#6d7e78"
+            android:textSize="12sp"
+            android:id="@+id/tv_email"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jumlah pegawai"
+                android:textColor="#b98c34"
+                android:textSize="12sp"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp"
+                android:background="@drawable/loker_bg"
+                android:backgroundTint="#fef4e0"
+                android:id="@+id/tv_pegawai"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="industri"
+                android:textColor="#69b693"
+                android:textSize="12sp"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/loker_bg"
+                android:backgroundTint="#cffee9"
+                android:id="@+id/tv_industri"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

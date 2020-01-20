@@ -36,15 +36,12 @@
             android:text="Memeh Isya Maghrib Heula."
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="200dp">
-            <ImageView
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/logo2"/>
-        </LinearLayout>
+
+        <ImageView
+            android:layout_width="293dp"
+            android:layout_height="210dp"
+            android:src="@drawable/likelok" />
+
 
     </LinearLayout>
 

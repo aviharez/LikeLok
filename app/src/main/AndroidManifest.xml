@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".company.CreateLokerActivity"></activity>
+        <activity android:name=".company.CompanyProfileActivity"></activity>
+        <activity android:name=".company.CreateLokerActivity" />
         <activity android:name=".company.CompanyProfilEditActivity" />
         <activity android:name=".seeker.SeekerProfilEditActivity" />
         <activity
