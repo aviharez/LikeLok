@@ -20,8 +20,10 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.likelok.DetailLokerActivity;
 import com.example.likelok.R;
 import com.example.likelok.adapter.CompanyLokerAdapter;
+import com.example.likelok.adapter.RecyclerTouchListener;
 import com.example.likelok.models.Loker;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -104,8 +106,8 @@ public class CompanyLokerFragment extends Fragment {
                 lokerList = new ArrayList<>();
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     Loker loker = postSnapshot.getValue(Loker.class);
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault());
-                    String currentDateandTime = sdf.format(new Date());
+//                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault());
+//                    String currentDateandTime = sdf.format(new Date());
 
                     lokerList.add(loker);
 
@@ -115,6 +117,13 @@ public class CompanyLokerFragment extends Fragment {
                 //Log.d("OWYOWYWOWUYOWYWOYWOYW", lokerList.toString());
                 adapter = new CompanyLokerAdapter(lokerList, getContext());
                 rv_loker_company.setAdapter(adapter);
+                RecyclerTouchListener.addTo(rv_loker_company).setOnItemClickListener(new RecyclerTouchListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                        Intent i = new Intent(getContext(), DetailLokerActivity.class);
+                        startActivity(i);
+                    }
+                });
             }
 
             @Override

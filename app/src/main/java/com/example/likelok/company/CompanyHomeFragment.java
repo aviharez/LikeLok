@@ -78,12 +78,6 @@ public class CompanyHomeFragment extends Fragment {
         loading.setVisibility(View.VISIBLE);
         loadData();
 
-
-
-
-
-
-
         return v;
     }
 
@@ -135,6 +129,8 @@ public class CompanyHomeFragment extends Fragment {
                     @Override
                     public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                         Intent i = new Intent(getContext(), DetailLokerActivity.class);
+                        i.putExtra("data_loker", lokerList.get(position));
+                        i.putExtra("type", "company");
                         startActivity(i);
                     }
                 });

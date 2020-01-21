@@ -1,6 +1,9 @@
 package com.example.likelok.models;
 
-public class Loker {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Loker implements Parcelable {
 
     private String nama_loker, email, pic, jenis, gaji, deskripsi, lowongan, tingkat, deadline;
 
@@ -18,6 +21,30 @@ public class Loker {
         this.tingkat = tingkat;
         this.deadline = deadline;
     }
+
+    protected Loker(Parcel in) {
+        nama_loker = in.readString();
+        email = in.readString();
+        pic = in.readString();
+        jenis = in.readString();
+        gaji = in.readString();
+        deskripsi = in.readString();
+        lowongan = in.readString();
+        tingkat = in.readString();
+        deadline = in.readString();
+    }
+
+    public static final Creator<Loker> CREATOR = new Creator<Loker>() {
+        @Override
+        public Loker createFromParcel(Parcel in) {
+            return new Loker(in);
+        }
+
+        @Override
+        public Loker[] newArray(int size) {
+            return new Loker[size];
+        }
+    };
 
     public String getNama_loker() {
         return nama_loker;
@@ -89,5 +116,23 @@ public class Loker {
 
     public void setDeadline(String deadline) {
         this.deadline = deadline;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(nama_loker);
+        dest.writeString(email);
+        dest.writeString(pic);
+        dest.writeString(jenis);
+        dest.writeString(gaji);
+        dest.writeString(deskripsi);
+        dest.writeString(lowongan);
+        dest.writeString(tingkat);
+        dest.writeString(deadline);
     }
 }
