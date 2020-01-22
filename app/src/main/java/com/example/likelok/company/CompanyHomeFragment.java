@@ -96,16 +96,6 @@ public class CompanyHomeFragment extends Fragment {
                 }
                 adapterCompany = new CompanyAdapter(companyList, getContext());
                 rv_company.setAdapter(adapterCompany);
-                RecyclerTouchListener.addTo(rv_company).setOnItemClickListener(new RecyclerTouchListener.OnItemClickListener() {
-                    @Override
-                    public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                        Intent i = new Intent(getContext(), CompanyProfileActivity.class);
-                        //i.putExtra("pos", (Parcelable) list.get(position));
-
-                        startActivity(i);
-                    }
-                });
-
             }
 
             @Override

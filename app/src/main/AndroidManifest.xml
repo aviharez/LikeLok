@@ -30,7 +30,8 @@
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DetailLokerActivity" />
+        <activity android:name=".DetailLokerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".seeker.SeekerMainActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".Login2Activity" />

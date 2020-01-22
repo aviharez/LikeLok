@@ -94,14 +94,6 @@ public class SeekerHomeFragment extends Fragment {
                 }
                 adapterCompany = new CompanyAdapter(companyList, getContext());
                 rv_company.setAdapter(adapterCompany);
-                RecyclerTouchListener.addTo(rv_company).setOnItemClickListener(new RecyclerTouchListener.OnItemClickListener() {
-                    @Override
-                    public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                        Intent i = new Intent(getContext(), CompanyProfileActivity.class);
-
-                        startActivity(i);
-                    }
-                });
             }
 
             @Override
@@ -126,7 +118,7 @@ public class SeekerHomeFragment extends Fragment {
                     public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                         Intent i = new Intent(getContext(), DetailLokerActivity.class);
                         i.putExtra("data_loker", lokerList.get(position));
-                        i.putExtra("type", "company");
+                        i.putExtra("type", "seeker");
                         startActivity(i);
                     }
                 });
