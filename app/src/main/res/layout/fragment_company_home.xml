@@ -59,6 +59,7 @@
                         android:paddingLeft="16dp"
                         android:paddingRight="16dp"
                         android:textSize="13sp"
+                        android:focusable="false"
                         android:hint="Cari pekerjaan idamanmu" />
 
                     <ImageButton

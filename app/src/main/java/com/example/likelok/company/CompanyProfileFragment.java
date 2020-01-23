@@ -139,7 +139,7 @@ public class CompanyProfileFragment extends Fragment {
                     tv_email.setText(companyProfile.getEmail());
                     tv_industri.setText(companyProfile.getIndustri());
                     tv_tlp.setText(companyProfile.getTelepon());
-                    tv_jml_pegawai.setText(companyProfile.getTelepon());
+                    tv_jml_pegawai.setText(companyProfile.getPegawai());
                     tv_alamat.setText(companyProfile.getAlamat());
 
                 }

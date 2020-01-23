@@ -66,14 +66,13 @@ public class CompanyLokerAdapter extends RecyclerView.Adapter<CompanyLokerAdapte
 
     public class CompanyLokerViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView tv_nama_loker, tv_nama_company, tv_fee, tv_tanggal, tv_jenis;
+        private TextView tv_nama_loker, tv_fee, tv_tanggal, tv_jenis;
         private ImageView iv_loker;
         private View view;
 
         public CompanyLokerViewHolder(View itemView) {
             super(itemView);
             view = itemView;
-            tv_nama_company = itemView.findViewById(R.id.tv_nama_company);
             tv_nama_loker = itemView.findViewById(R.id.tv_nama_loker);
             tv_fee = itemView.findViewById(R.id.tv_fee);
             tv_tanggal = itemView.findViewById(R.id.tv_tanggal);
